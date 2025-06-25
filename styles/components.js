@@ -1,38 +1,46 @@
+// styles/components.js
 import { theme } from './theme.js'
 
 export const headingMain = {
   color: theme.colors.accent,
-  fontSize: '2rem',
-  marginBottom: theme.spacing.sm,
-  fontWeight: '600'
+  fontSize: '2.5rem',
+  fontWeight: '700',
+  marginBottom: theme.spacing.md,
+  textAlign: 'center'
+}
+
+export const paragraphMain = {
+  color: theme.colors.text,
+  fontSize: '1.125rem',
+  lineHeight: '1.6',
+  maxWidth: '600px',
+  margin: '0 auto',
+  marginBottom: theme.spacing.lg,
+  textAlign: 'center'
 }
 
 export const cardBase = {
+  background: '#fff',
   border: `1px solid ${theme.colors.border}`,
-  padding: theme.spacing.md,
   borderRadius: theme.radius,
-  background: theme.colors.background
+  padding: theme.spacing.lg,
+  marginBottom: theme.spacing.md,
+  boxShadow: '0 4px 20px rgba(0, 0, 0, 0.04)'
 }
 
 export const linkStyle = {
-  color: theme.colors.accent,
-  fontWeight: 'bold',
-  textDecoration: 'none',
   display: 'inline-block',
-  marginTop: theme.spacing.sm
+  marginTop: theme.spacing.sm,
+  color: theme.colors.accent,
+  textDecoration: 'none',
+  fontWeight: '600'
 }
 
-export const ulStyle = {
-    linkStyle: 'none',
-    padding: '0',
-    display: 'flex',
-    flexWrap: 'wrap',
-    gap: '0.4rem'
-}
-
-export const liCardTech = {
-    background: '#eee',
-    padding: '0.2rem 0.5rem',
-    borderRadius: '4px',
-    fontSize: '0.85rem'
+export const tagStyle = {
+  background: theme.colors.tagBackground,
+  padding: '0.3rem 0.75rem',
+  borderRadius: '999px',
+  fontSize: '0.85rem',
+  fontWeight: '500',
+  color: theme.colors.accent
 }

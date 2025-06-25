@@ -1,5 +1,6 @@
+// blocks/projectCard.js
 import { style } from '../styles/index.js'
-import { cardBase, headingMain, linkStyle, ulStyle, liCardTech } from '../styles/index.js'
+import { cardBase, headingMain, linkStyle, tagStyle } from '../styles/index.js'
 
 export function projectCard({ title, description, tech, repo }) {
   const div = document.createElement('div')
@@ -13,12 +14,18 @@ export function projectCard({ title, description, tech, repo }) {
   p.textContent = description
 
   const ul = document.createElement('ul')
-  style(ul, ulStyle)
-  
+  style(ul, {
+    listStyle: 'none',
+    padding: '0',
+    display: 'flex',
+    flexWrap: 'wrap',
+    gap: '0.4rem'
+  })
+
   tech.forEach(t => {
     const li = document.createElement('li')
     li.textContent = t
-    style(li, liCardTech)
+    style(li, tagStyle)
     ul.appendChild(li)
   })
 

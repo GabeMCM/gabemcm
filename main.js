@@ -1,6 +1,6 @@
-import { heading } from './components/heading.js'
-import { paragraph } from './components/paragraph.js'
-import { projectCard } from './components/projectCard.js'
+import { heading } from './blocks/heading.js'
+import { paragraph } from './blocks/paragraph.js'
+import { projectCard } from './blocks/projectCard.js'
 
 const app = document.getElementById('app')
 

@@ -1,3 +1,4 @@
+// blocks/heading.js
 import { style } from '../styles/index.js'
 import { headingMain } from '../styles/index.js'
 
